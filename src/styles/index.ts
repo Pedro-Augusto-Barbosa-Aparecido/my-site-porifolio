@@ -19,5 +19,12 @@ export const {
       xl: "1.5rem",
       "2xl": "2rem",
     },
+    fonts: {
+      roboto: "Roboto, sans-serif",
+    },
+    fontWeights: {
+      robotoBold: 700,
+      robotoRegular: 400,
+    },
   },
 });

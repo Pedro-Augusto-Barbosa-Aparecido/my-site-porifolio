@@ -9,13 +9,13 @@ interface IGlobalContext {
 export const GlobalContext = createContext({} as IGlobalContext);
 
 type GlobalContextType = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 export const GlobalContextProvider = ({ children }: GlobalContextType) => {
   const [pageTitle, setPageTitle] = useState<string>("Pedro - Home");
 
-  function changePageTitle (title: string) {
+  function changePageTitle(title: string) {
     setPageTitle(title);
   }
 
@@ -26,5 +26,5 @@ export const GlobalContextProvider = ({ children }: GlobalContextType) => {
       </Head>
       {children}
     </GlobalContext.Provider>
-  )
-}
+  );
+};
