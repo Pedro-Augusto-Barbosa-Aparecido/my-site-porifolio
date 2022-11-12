@@ -15,6 +15,8 @@ export const stitchesColorTheme = {
   purple600: "#9B00B8",
   red700: "#DB0138",
   zinc400: "#A1A1AA",
+  zinc500: "#71717a",
   zinc600: "#52525B",
+  zinc800: "#27272a",
   zinc900: "#18181B",
 } as const;
