@@ -7,8 +7,14 @@ export const TextLink = styled("span", {
   lineHeight: 1.6,
   fontSize: "2rem",
   textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  textDecoration: "none",
   "&:hover": {
     cursor: "pointer",
+    textDecoration: "underline",
+    color: "$gray300",
+  },
+  "&:active": {
+    cursor: "SeparatorRoot",
     textDecoration: "underline",
     color: "$gray300",
   },
