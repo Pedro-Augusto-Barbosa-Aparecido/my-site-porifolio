@@ -16,6 +16,8 @@ import {
 import { Input, TextArea } from "../components/Input";
 import { Button } from "../components/Button";
 import { Envelope } from "phosphor-react";
+import { DialogRoot } from "../components/Modal/styles";
+import { ComingSoon, Modal } from "../components/Modal";
 
 export default function Home() {
   return (
@@ -41,22 +43,73 @@ export default function Home() {
         <AboutMe>
           <AboutMeItem>
             <h3>Mais sobre mim:</h3>
-            <List>
-              <ItemList>Tecnologias que tenho domínio</ItemList>
-              <ItemList>Tecnologias que tenho conhecimento</ItemList>
-              <ItemList>Graduações</ItemList>
-              <ItemList>Premiações</ItemList>
-              <ItemList>Cursos</ItemList>
-            </List>
+            <DialogRoot>
+              <List>
+                <Modal
+                  trigger={<ItemList>Tecnologias que tenho domínio</ItemList>}
+                  // title={<span>Tecnologias</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+                <Modal
+                  trigger={
+                    <ItemList>Tecnologias que tenho conhecimento</ItemList>
+                  }
+                  // title={<span>Tecnologias</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+                <Modal
+                  trigger={<ItemList>Graduações</ItemList>}
+                  // title={<span>Graduações</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+                <Modal
+                  trigger={<ItemList>Premiações</ItemList>}
+                  // title={<span>Premiações</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+                <Modal
+                  trigger={<ItemList>Cursos</ItemList>}
+                  // title={<span>Cursos</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+              </List>
+            </DialogRoot>
           </AboutMeItem>
           <AboutMeItem>
             <h3>O que estudo atualmente:</h3>
-            <List>
-              <ItemList>ReactJS com NextJS e Typescript</ItemList>
-              <ItemList>NodeJS com Typescript</ItemList>
-              <ItemList>Python e performance</ItemList>
-              <ItemList>Serveless Functions</ItemList>
-            </List>
+            <DialogRoot>
+              <List>
+                <Modal
+                  trigger={<ItemList>ReactJS com NextJS e Typescript</ItemList>}
+                  // title={<span>React & Next</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+                <Modal
+                  trigger={<ItemList>NodeJS com Typescript</ItemList>}
+                  // title={<span>NodeJS & Typescript</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+                <Modal
+                  trigger={<ItemList>Python e performance</ItemList>}
+                  // title={<span>Python & Performance</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+                <Modal
+                  trigger={<ItemList>Serveless Functions</ItemList>}
+                  // title={<span>Serveless</span>}
+                >
+                  <ComingSoon />
+                </Modal>
+              </List>
+            </DialogRoot>
           </AboutMeItem>
         </AboutMe>
         {/* <ImageBottom
