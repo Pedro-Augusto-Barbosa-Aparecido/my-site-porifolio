@@ -7,6 +7,7 @@ import avatar from "../../assets/avatar.svg";
 
 import Link from "next/link";
 import { DropdownDownload } from "./components/DropdownDownload";
+import { ModalContactMe } from "./components/ModalContactMe";
 
 export function Header() {
   return (
@@ -16,7 +17,7 @@ export function Header() {
           <TextLink>Home</TextLink>
         </Link>
         <DropdownDownload />
-        <TextLink>Entre em contato</TextLink>
+        <ModalContactMe />
       </div>
       <Image src={avatar} alt="image of developer like" priority />
     </HeaderStyle>
