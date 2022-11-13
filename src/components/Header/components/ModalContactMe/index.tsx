@@ -12,6 +12,7 @@ import {
 } from "./styles";
 
 import { Envelope, X } from "phosphor-react";
+import { Button } from "../../../Button";
 
 export function ModalContactMe() {
   return (
@@ -33,7 +34,7 @@ export function ModalContactMe() {
                   </ButtonClose>
                 </Dialog.Close>
               </div>
-              <ModalForm>
+              <ModalForm onSubmit={(ev) => ev.preventDefault()}>
                 <Input
                   labelText="E-mail"
                   name="email"
@@ -45,6 +46,7 @@ export function ModalContactMe() {
                   name="message"
                   placeholder="Insira sua mensagem para mim..."
                 />
+                <Button />
               </ModalForm>
             </Modal>
           </DialogContent>
