@@ -18,10 +18,14 @@ export const DropdownRoot = styled(Dropdown.Root, {
   outline: "none",
 });
 
+export const DropdownPortal = styled(Dropdown.Portal, {
+  height: "100vh",
+});
+
 export const DropdownContent = styled(Dropdown.Content, {
   padding: 10,
   width: "23.5rem",
-  marginLeft: "12.125rem",
+  marginLeft: "11.125rem",
 
   background: "$gray700",
 

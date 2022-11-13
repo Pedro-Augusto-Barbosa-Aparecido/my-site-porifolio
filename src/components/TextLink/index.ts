@@ -5,7 +5,7 @@ export const TextLink = styled("span", {
   fontWeight: "$robotoBold",
   color: "$zinc400",
   lineHeight: 1.6,
-  fontSize: "2rem",
+  fontSize: "1.5rem",
   textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
   textDecoration: "none",
   "&:hover": {

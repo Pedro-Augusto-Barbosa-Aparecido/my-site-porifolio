@@ -11,11 +11,13 @@ export const globalStyles = globalCss({
     fontSize: "1.25rem",
     lineHeight: "160%",
   },
+
   body: {
     backgroundColor: "$gray200",
     color: "$gray100",
     "-webkit-font-smoothing": "antialiased",
   },
+
   "body, input, textarea, button": {
     fontFamily: "Roboto",
     fontWeight: 400,
@@ -39,10 +41,12 @@ export const globalStyles = globalCss({
     transition: "background-color 5000s",
     "-webkit-text-fill-color": "$zinc400 !important",
   },
+
   "input:-webkit-auto-fill:hover": {
     transition: "background-color 5000s",
     "-webkit-text-fill-color": "$zinc400 !important",
   },
+
   "input:-webkit-auto-fill:focus": {
     transition: "background-color 5000s",
     "-webkit-text-fill-color": "$zinc400 !important",
@@ -50,14 +54,14 @@ export const globalStyles = globalCss({
 
   "::-webkit-scrollbar": {
     width: "0.5rem",
-    position: "absolute",
     backgroundColor: "$gray900",
   },
 
   "::-webkit-scrollbar-track": {
     backgroundColor: "$gray900",
   },
+
   "::-webkit-scrollbar-thumb": {
-    backgroundColor: "$zinc600",
+    backgroundColor: "$blue500",
   },
 });

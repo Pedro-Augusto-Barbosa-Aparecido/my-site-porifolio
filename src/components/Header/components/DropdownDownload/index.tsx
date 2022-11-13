@@ -6,6 +6,7 @@ import {
   DropdownRoot,
   DropdownSeparator,
   DropdownMenuItem,
+  DropdownPortal,
 } from "./styles";
 
 import * as Dropdown from "@radix-ui/react-dropdown-menu";
@@ -17,7 +18,7 @@ export function DropdownDownload() {
       <Dropdown.Trigger asChild>
         <TextLink>Meu Currículo</TextLink>
       </Dropdown.Trigger>
-      <Dropdown.Portal>
+      <DropdownPortal>
         <DropdownContent sideOffset={5}>
           <DropdownMenuItem>
             <Link href="/api/cv-pdf">Download as PDF</Link>
@@ -29,7 +30,7 @@ export function DropdownDownload() {
             <PngIcon weight="bold" size={32} />
           </DropdownMenuItem>
         </DropdownContent>
-      </Dropdown.Portal>
+      </DropdownPortal>
     </DropdownRoot>
   );
 }

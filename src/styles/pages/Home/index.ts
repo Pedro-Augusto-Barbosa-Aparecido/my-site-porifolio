@@ -9,6 +9,9 @@ export const AboutMeContainer = styled("main", {
   padding: "3.75rem 3.125rem",
   // paddingBottom: 0,
   backgroundColor: "$gray200",
+  backgroundImage: "url(/bg.png)",
+  backgroundRepeat: "no-repeat",
+  backgroundPositionX: "right",
 
   display: "flex",
   flexDirection: "column",
@@ -74,10 +77,13 @@ export const ItemList = styled("li", {
 });
 
 export const ImageBottom = styled(Image, {
-  position: "absolute",
+  position: "fixed",
 
-  bottom: 0,
+  right: 0,
   marginBottom: -230,
+  marginRight: 0,
+
+  // float: "left",
 
   variants: {
     position: {
@@ -90,7 +96,7 @@ export const ImageBottom = styled(Image, {
     },
     bottom: {
       less: {
-        bottom: 70,
+        bottom: 60,
       },
     },
   },

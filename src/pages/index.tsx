@@ -5,13 +5,14 @@ import {
   AboutMeItem,
   ContactFormHomeContainer,
   Form,
-  ImageBottom,
+  // ImageBottom,
   ItemList,
   List,
 } from "../styles/pages/Home";
 
-import sasuke from "../assets/sasuke.svg";
-import sharingan from "../assets/sharingan.svg";
+// import sasuke from "../assets/sasuke.svg";
+// import sharingan from "../assets/sharingan.svg";
+
 import { Input, TextArea } from "../components/Input";
 import { Button } from "../components/Button";
 import { Envelope } from "phosphor-react";
@@ -58,19 +59,19 @@ export default function Home() {
             </List>
           </AboutMeItem>
         </AboutMe>
-        <ImageBottom
+        {/* <ImageBottom
           position={"left"}
           bottom="less"
           src={sharingan}
           alt="Sharingan"
           priority
-        />
-        <ImageBottom
+        /> */}
+        {/* <ImageBottom
           position={"right"}
           src={sasuke}
           alt="Sasuke Uchiha"
           priority
-        />
+        /> */}
       </AboutMeContainer>
       <ContactFormHomeContainer>
         <h2>Entre em contato comigo</h2>
