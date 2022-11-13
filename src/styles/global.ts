@@ -4,6 +4,12 @@ export const globalStyles = globalCss({
   "*": {
     margin: 0,
     padding: 0,
+
+    fontFamily: "'Roboto'",
+    fontStyle: "normal",
+    fontWeight: 400,
+    fontSize: "1.25rem",
+    lineHeight: "160%",
   },
   body: {
     backgroundColor: "$gray200",
@@ -40,5 +46,17 @@ export const globalStyles = globalCss({
   "input:-webkit-auto-fill:focus": {
     transition: "background-color 5000s",
     "-webkit-text-fill-color": "$zinc400 !important",
+  },
+
+  "::-webkit-scrollbar": {
+    width: "0.5rem",
+    backgroundColor: "$gray900",
+  },
+
+  "::-webkit-scrollbar-track": {
+    backgroundColor: "$gray900",
+  },
+  "::-webkit-scrollbar-thumb": {
+    backgroundColor: "$zinc600",
   },
 });
