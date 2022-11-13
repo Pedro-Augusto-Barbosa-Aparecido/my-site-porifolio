@@ -46,7 +46,7 @@ export function ModalContactMe() {
                   name="message"
                   placeholder="Insira sua mensagem para mim..."
                 />
-                <Button />
+                <Button text="Enviar mensagem" />
               </ModalForm>
             </Modal>
           </DialogContent>

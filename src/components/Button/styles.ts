@@ -24,6 +24,8 @@ export const BaseButton = styled("button", {
 
   transition: "background-color .25s",
 
+  cursor: "pointer",
+
   "&:hover": {
     backgroundColor: "$blue500",
     color: "$white900",
@@ -33,6 +35,7 @@ export const BaseButton = styled("button", {
     backgroundColor: "transparent",
     border: "4px solid $blue500",
     color: "$white900",
+    cursor: "default",
     // "inner-border-radius": 6,
   },
 });

@@ -1,5 +1,11 @@
+import React from "react";
+
 import { BaseButton } from "./styles";
 
-export function Button() {
-  return <BaseButton>Enviar Mensagem</BaseButton>;
+type ButtonProps = React.HTMLAttributes<HTMLButtonElement> & {
+  text: string;
+};
+
+export function Button({ text, ...rest }: ButtonProps) {
+  return <BaseButton {...rest}>{text}</BaseButton>;
 }

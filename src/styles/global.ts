@@ -50,6 +50,7 @@ export const globalStyles = globalCss({
 
   "::-webkit-scrollbar": {
     width: "0.5rem",
+    position: "absolute",
     backgroundColor: "$gray900",
   },
 

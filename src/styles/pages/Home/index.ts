@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { styled } from "../..";
+import { ModalForm } from "../../../components/Header/components/ModalContactMe/styles";
 
 export const AboutMeContainer = styled("main", {
   height: "fit-content",
@@ -87,5 +88,42 @@ export const ImageBottom = styled(Image, {
         left: 0,
       },
     },
+    bottom: {
+      less: {
+        bottom: 70,
+      },
+    },
+  },
+});
+
+export const ContactFormHomeContainer = styled("section", {
+  backgroundColor: "$zinc900",
+
+  padding: "5.625rem 0",
+
+  alignSelf: "stretch",
+  gap: "3rem",
+
+  position: "relative",
+  zIndex: 99999,
+
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+
+  h2: {
+    fontSize: "1.5rem",
+    fontWeight: "700",
+
+    color: "$gray200",
+  },
+});
+
+export const Form = styled(ModalForm, {
+  width: "27.5rem",
+
+  button: {
+    height: 75,
   },
 });
